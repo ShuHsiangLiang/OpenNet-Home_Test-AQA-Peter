@@ -16,7 +16,7 @@ This project automates the complete user flow on Twitch mobile:
 
 ## Demo
 
-![Automation Demo](demo_workflow.gif)
+![Automation Demo](demo_video.gif)
 
 ---
 
