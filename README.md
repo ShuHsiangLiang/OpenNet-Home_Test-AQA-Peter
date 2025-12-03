@@ -30,13 +30,8 @@ This project automates the complete user flow on Twitch mobile:
 │   └── streamer_page.py       # Streamer page object (scroll, select, popup handling)
 ├── tests/
 │   └── test_twitch_wap.py     # Main test case
-├── scripts/
-│   └── download_chromedriver.py # Helper to auto-download matching Chromedriver
 ├── conftest.py                # Pytest configuration & WebDriver fixture
-├── start_appium.cmd           # Helper batch file to launch Appium
 ├── requirements.txt           # Python dependencies
-├── QUICKSTART.md              # Step-by-step setup guide
-├── ANDROID_SETUP.md           # Android Emulator & Appium guide
 └── screenshots/               # Test artifacts (screenshots, HTML, metadata)
 ```
 
@@ -89,12 +84,7 @@ pytest
 ### Option 2: Android Emulator (via Appium)
 Runs on a real Android emulator with Chrome:
 
-**Step 1:** Download matching Chromedriver
-```cmd
-python scripts/download_chromedriver.py --major 142
-```
-
-**Step 2:** Start Android Emulator & Appium server
+**Step 1:** Start Android Emulator & Appium server
 ```cmd
 start_appium.cmd
 ```
@@ -123,16 +113,13 @@ When tests run, artifacts are automatically captured in `screenshots/`:
 - **Search Keyword**: Edit `tests/test_twitch_wap.py` → `search_for_streamer("StarCraft II")`
 
 ### Android Emulator Configuration
-- **Device**: Pixel 4, API 30+ recommended
+- **Device**: Pixel 8, API 35+ recommended
 - **Chrome Version**: Should match 142+ (auto-handled via Chromedriver download)
-- **Environment Variables**: Set in `start_appium.cmd` or system PATH
 
 ---
 
 ## 📚 Documentation
 
-- **[QUICKSTART.md](QUICKSTART.md)** — Complete step-by-step guide for Android testing
-- **[ANDROID_SETUP.md](ANDROID_SETUP.md)** — Detailed Android SDK, Appium, and Chromedriver setup
 - **[requirements.txt](requirements.txt)** — Python package versions
 
 ---
