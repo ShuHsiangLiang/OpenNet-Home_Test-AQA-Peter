@@ -74,22 +74,8 @@ This project automates the complete user flow on Twitch mobile:
 
 ## ▶️ Running Tests
 
-### Option 1: Chrome Mobile Emulation (Default)
-Fastest option, runs locally without emulator/Appium:
+### Chrome Mobile Emulation (Default)
 
-```cmd
-pytest
-```
-
-### Option 2: Android Emulator (via Appium)
-Runs on a real Android emulator with Chrome:
-
-**Step 1:** Start Android Emulator & Appium server
-```cmd
-start_appium.cmd
-```
-
-**Step 3:** Run tests in another terminal
 ```cmd
 pytest --android -v
 ```
