@@ -1,0 +1,16 @@
+# IDE/Editor Configuration
+# Ignore the entire VS Code settings folder
+.vscode/
+
+# Python Generated Files
+# Ignore compiled bytecode cache folders
+__pycache__/
+.pytest_cache
+# Ignore all compiled Python files everywhere
+*.pyc
+
+# Optional: Common System/Output Files
+# Ignore macOS resource files
+.DS_Store
+# Ignore logs and temporary files
+*.log
